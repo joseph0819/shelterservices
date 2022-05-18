@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="shelter services" class="logo" />
+
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img
+              src="images/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="images/exit.svg" alt="exit" />
+            </li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <img
+          src="images/server.svg"
+          alt="server illustration"
+          class="server"
+          id="server"
+        />
+        <h1>Welcome to shelter services</h1>
+        <p class="subhead">for affordable and cost effective designs</p>
+        <img
+          src="images/scroll.svg"
+          alt="scroll down"
+          class="scroll hide-mobile show-desktop"
+        />
+      </section>
+    </div>
+    <div class="blue-container">
+      <dilv class="container">
+        <ul>
+          <li>
+            <img src="images/icon-1.svg" alt="architectures" />
+            <p class="joseph">
+              Lets get you started off with an ultra-modern fit and government
+              approved cost effective architectural plan to get you started on
+              your ideal project!!!
+            </p>
+          </li>
+          <li>
+            <img src="images/icon-2.svg" alt="structural plans" />
+            <p class="bet"> 
+              We offer you a great deal for your high risings and suspended
+              floor plans with top notch structural integrity from our qualified
+              numbers of registered structural engineers to take care of your
+              structural needs.
+            </p>
+          </li>
+          <li>
+            <img
+              src="images/icon-3.svg"
+              alt="mechanical and electrical plans"
+            />
+            <p>
+              Take advantage of our top notch electrical and mechanical plans to
+              give that finish touches and experienced detailing to your project
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="gray-container">
+      <div class="container">
+        <ul>
+          <li>
+            <figure>
+              <img src="images/user1.png" alt="picture" />
+              <blockquote>
+                My dream was always to get me a semi-detached duplex to my name
+                with plenty of room for my fairly large family, Shelter services
+                was able to provide me my money's worth i'll tell you that for
+                free.
+              </blockquote>
+              <figcaption>Prince Stanley</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/user2.png" alt="picture" />
+              <blockquote>
+                I needed an office space with good and modern structural designs
+                and plenty of room for my staff to get productive and to provide
+                an enabling work environment. Shelter services made that
+                possible.
+              </blockquote>
+              <figcaption class="cj">Umunna Joseph</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Let us help you get started</h2>
+      <a href="#" class="cta">Hire Us!!!</a>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#"
+            ><img src="images/logo-white.svg" alt="logo" class="class" />
+            <p class="address">
+              Floor 3b, Sky Memorial plaza, Wuse, zone 6<br />
+              Abuja.
+            </p>
+            <ul class="footer-links">
+              <li>
+                <a href="#">Terms of services</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+
+      menu.addEventListener('click', function(e){
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+      });
+
+      exit.addEventListener('click', function(e){
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+      });
+
+    </script>
+  </body>
+</html>
+l
